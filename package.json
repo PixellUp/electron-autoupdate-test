@@ -1,6 +1,6 @@
 {
   "name": "electronautoupdate",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "T. D",
   "homepage": "./",
   "description": "An example of an autoupdating electron app",
