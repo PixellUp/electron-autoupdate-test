@@ -1,0 +1,20 @@
+{
+  "name": "electronautoupdate",
+  "version": "1.0.0",
+  "author": "T. D",
+  "homepage": "./",
+  "description": "An example of an autoupdating electron app",
+  "repository": "https://github.com/PixellUp/electron-autoupdate-test",
+  "main": "electron.js",
+  "dependencies": {
+    "electron-updater": "^2.20.1"
+  },
+  "scripts": {
+    "build": "build --win",
+    "ship": "build --win -p always"
+  },
+  "devDependencies": {
+    "electron": "^1.7.11",
+    "electron-builder": "^19.55.2"
+  }
+}
