@@ -1,12 +1,13 @@
 {
   "name": "electronautoupdate",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "T. D",
   "homepage": "./",
   "description": "An example of an autoupdating electron app",
   "repository": "https://github.com/PixellUp/electron-autoupdate-test",
   "main": "electron.js",
   "dependencies": {
+    "electron-log": "^2.2.14",
     "electron-updater": "^2.20.1"
   },
   "scripts": {
