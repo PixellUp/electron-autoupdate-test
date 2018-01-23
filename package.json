@@ -1,6 +1,6 @@
 {
   "name": "electronautoupdate",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "author": "T. D",
   "homepage": "./",
   "description": "An example of an autoupdating electron app",
@@ -17,5 +17,12 @@
   "devDependencies": {
     "electron": "^1.7.11",
     "electron-builder": "^19.55.2"
+  },
+  "build": {
+    "nsis": {
+      "installerLanguages": "en_US",
+      "displayLanguageSelector": true,
+      "multiLanguageInstaller": true
+    }
   }
 }
