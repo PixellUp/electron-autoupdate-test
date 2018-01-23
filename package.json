@@ -1,8 +1,8 @@
 {
-  "name": "electronautoupdate",
+  "name": "electron auto-update app",
   "version": "1.0.8",
   "author": "T. D",
-  "homepage": "./",
+  "homepage": "https://github.com/PixellUp/electron-autoupdate-test",
   "description": "An example of an autoupdating electron app",
   "repository": "https://github.com/PixellUp/electron-autoupdate-test",
   "main": "electron.js",
