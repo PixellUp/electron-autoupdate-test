@@ -13,11 +13,14 @@
             // changes the text of the button
             var container = document.getElementById('ready');
             container.innerHTML = "new version ready!";
+            alert("new version ready!");
         })
     </script>
-    Version: <span id="version">v1.0.0</span>
+    Version: <span id="version">v1.0.1</span>
+    <br>
+    Today is rainy day
     <!-- the button onClick sends a quitAndInstall message to the electron main process -->
-    <button id="ready" onClick="ipcRenderer.send('quitAndInstall')">no updates ready</button>
+    <button id="ready" onClick="ipcRenderer.send('quitAndInstall')">Check for updates</button>
 
 </body>
 
