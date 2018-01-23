@@ -27,8 +27,8 @@ app.on('ready', function() {
   createDefaultWindow();
   autoUpdater.checkForUpdatesAndNotify();
 });
-ipcMain.on("quitAndInstall", (event, arg) => {
-    autoUpdater.quitAndInstall();
+ipcMain.on("checkForUpdate", (event, arg) => {
+    autoUpdater.checkForUpdatesAndNotify();
 })
 
 autoUpdater.on('checking-for-update', () => {

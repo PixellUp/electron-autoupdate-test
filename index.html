@@ -20,12 +20,12 @@
     <br>
     <div id="messages"></div>
     <!-- the button onClick sends a quitAndInstall message to the electron main process -->
-    <button id="ready" onClick="ipcRenderer.send('quitAndInstall')">Check for updates</button>
+    <button id="ready" onClick="ipcRenderer.send('checkForUpdate')">Check for updates</button>
 
     <script>
         // Display the current version
         let version = window.location.hash.substring(1);
-        document.getElementById('version').innerText = "1.0.6";
+        document.getElementById('version').innerText = "1.0.7";
         // Listen for messages
         ipcRenderer.on('message', function(event, text) {
         var container = document.getElementById('messages');
