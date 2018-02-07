@@ -16,7 +16,7 @@
             alert("new version ready!");
         })
     </script>
-    Current version: <span id="version">vX.Y.Z</span>
+    Current version: v<span id="version">vX.Y.Z</span>
     <br>
     <div id="messages"></div>
     <!-- the button onClick sends a quitAndInstall message to the electron main process -->
@@ -24,8 +24,8 @@
 
     <script>
         // Display the current version
-        let version = window.location.hash.substring(1);
-        document.getElementById('version').innerText = "1.0.8";
+        var appVersion = require('electron').remote.app.getVersion();
+        document.getElementById('version').innerText = appVersion;
         // Listen for messages
         ipcRenderer.on('message', function(event, text) {
         var container = document.getElementById('messages');
