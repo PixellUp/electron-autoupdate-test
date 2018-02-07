@@ -11,7 +11,7 @@
     "electron-updater": "^2.20.1"
   },
   "scripts": {
-    "build": "build --win",
+    "build": "build --win -c.extraMetadata=app/en",
     "ship": "build --win -p always"
   },
   "devDependencies": {
